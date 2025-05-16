@@ -4,7 +4,7 @@ const sezioneQuiz = document.getElementById("sezioneQuiz");
 sezioneQuiz.style.display = "none";
 
 const sezionePunteggi = document.getElementById("sezionePunteggi");
-//sezionePunteggi.style.display = "none";
+sezionePunteggi.style.display = "none";
 
 const nome = document.getElementById("nome");
 const eta = document.getElementById("eta");

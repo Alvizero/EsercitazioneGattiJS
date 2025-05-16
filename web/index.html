@@ -16,7 +16,7 @@
             <label>Nome:</label><br>
             <input type="text" id="nome"><br>
             <label>Età:</label><br>
-            <input type="text" id="eta"><br>
+            <input type="number" id="eta"><br>
             <label>Email:</label><br>
             <input type="text" id="email"><br><br>
         </form>
@@ -29,15 +29,15 @@
     <div id="sezioneQuiz">
         <!-- DOMANDA 1 -->
         <div>
-            <p>Il gatto è:</p>
-            <form>
-                <input type="checkbox" id="felino">
-                <label>Felino</label><br>
-                <input type="checkbox" id="pesce">
-                <label>Pesce</label><br>
-                <input type="checkbox" id="rettile">
-                <label>Rettile</label><br>
-            </form>
+            <p>Il gatto e' un: </p>
+            <div>
+                <input type="radio" id="felino" name="domanda1">
+                <label>Un felino</label><br>
+                <input type="radio" id="pesce" name="domanda1">
+                <label>Un pesce</label><br>
+                <input type="radio" id="rettile" name="domanda1">
+                <label>Un rettile</label>
+            </div>
         </div>
 
         <!-- DOMANDA 2 -->
