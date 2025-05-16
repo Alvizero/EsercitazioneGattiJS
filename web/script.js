@@ -75,10 +75,12 @@ function confermaQuiz() {
 
 // DOMANDA 1
 function rispondidom1() {
+  const felino = document.getElementById("felino");
+  const pesce = document.getElementById("pesce");
+  const rettile = document.getElementById("rettile");
+
   if(felino.checked && !pesce.checked && !rettile.checked) {
     punteggio += 2;
-  } else {
-    punteggio--;
   }
 }
 
@@ -99,17 +101,15 @@ function foto2() {
 function rispondidom2() {
   if(rispostaDom2 == "foto2") {
     punteggio += 2;
-  } else {
-    punteggio--;
   }
 }
 
 // DOMANDA 3
 function rispondidom3() {
+  const domanda3 = document.getElementById("domanda3");
+
   if(domanda3.value == "risposta2") {
     punteggio += 2;
-  } else {
-    punteggio--;
   }
 }
 // QUIZ
@@ -138,7 +138,7 @@ function mostraParte3() {
     let percentuale = tempoDurataBarra * 10; // Calcola la nuova larghezza della barra (1 second = 10%)
     barra.style.width = percentuale + "%"; // Applica la nuova larghezza
 
-    let testoBarra = document.getElementById("testoBarra").innerHTML = "Tornerai in automatico all'inizio tra: " + tempoDurataBarra + " secondi"; // Aggiorna la scritta con il tempo rimanente
+    document.getElementById("testoBarra").innerHTML = "Tornerai in automatico all'inizio tra: " + tempoDurataBarra + " secondi"; // Aggiorna la scritta con il tempo rimanente
 
     if (tempoDurataBarra <= 0) { // Quando il tempo finisce
       clearInterval(tempoBarra); // Ferma il timer
